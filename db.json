@@ -1,0 +1,66 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "name": "The standard Lorem Ipsum passage",
+      "categoryId": 1,
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "id": 2,
+      "name": "Bonorum et Malorum",
+      "categoryId": 2,
+      "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+      "id": 3,
+      "name": "1914 translation by H. Rackham",
+      "categoryId": 3,
+      "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness."
+    },
+    {
+      "name": "cafe đen",
+      "categoryId": "1",
+      "desc": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "id": 4
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "name": "Designing Dashboards",
+      "img": "https://elements-cover-images-0.imgix.net/5dd0fcf2-9002-4797-8a05-30d524d38a12?auto=compress%2Cformat&fit=max&w=2740&s=86fa2824924486546bddeca720c95e98",
+      "category": "Dashboard",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 2,
+      "name": "Vibrant Portraits of 2020",
+      "img": "https://pazo.vn/wp-content/uploads/2021/03/what_is_design_simple_words.jpg",
+      "category": "Illustration",
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+    },
+    {
+      "id": 3,
+      "name": "36 Days of Malayalam type 1",
+      "img": "https://cdn.dribbble.com/users/1994565/screenshots/11240599/media/3c14aeb8ddc973fa1f94671498bdaa6b.jpg?compress=1&resize=400x300&vertical=top",
+      "category": "Typography",
+      "desc": "ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words."
+    },
+    {
+      "id": 4,
+      "name": "Components",
+      "img": "https://i.pinimg.com/originals/19/fa/5f/19fa5f15a3c6df152db66e206947c574.jpg",
+      "category": "Typography",
+      "desc": "ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words."
+    }
+  ],
+  "users": [
+    {
+      "email": "duy@gmail.com",
+      "password": "$2a$10$Iyuq7BNZprRr49LVvWcmy.SRV/el09FjRnuHO824CeW1rEXYHM7.O",
+      "name": "Duy Hà",
+      "id": 1
+    }
+  ]
+}

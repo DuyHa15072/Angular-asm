@@ -1,0 +1,61 @@
+<div class="w-full max-w-xs max-w-[700px] mx-auto px-5 text-center px-[20px]">
+  <h2 class="text-[44px] leading-[60px] font-bold">signIn</h2>
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" #addSignup="ngForm" (ngSubmit)="onSubmit()" #formAdd="ngForm" class="login-form">
+    <div class="mb-4">
+      <label class="text-gray-700 font-bold text-left flex " for="username">
+        Email
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text"
+       placeholder="email"
+       [(ngModel)]="user.email"
+       name="email" 
+       #email="ngModel"
+       minlength="3"
+       required
+       [(ngModel)]="user.email">
+       
+    </div>
+    <div class="mb-6">
+      <label class="text-gray-700 font-bold text-left flex " for="password">
+        Password
+      </label>
+      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" 
+      [(ngModel)]="user.password"
+      placeholder="password"
+      name="password"
+      #password="ngModel"
+      minlength="3"
+      required
+      [(ngModel)]="user.password">
+
+      <div  *ngIf="
+      email.invalid && (email.dirty || email.touched)||
+      password.invalid && (password.dirty || password.touched) "
+      class="alert">
+      <div *ngIf="email.errors?.['required']" class="text-red-500 text-xs italic" >
+        email is required.
+      </div>
+      <div *ngIf="email.errors?.['minlength']"  class="text-red-500 text-xs italic">
+        email must be at least 3 characters long.
+      </div>
+                           <!-- email -->
+      <div *ngIf="password.errors?.['required']" class="text-red-500 text-xs italic" >
+        password is required.
+      </div>
+      <div *ngIf="password.errors?.['minlength']"  class="text-red-500 text-xs italic">
+        password must be at least 3 characters long.
+      </div>
+                            <!-- password -->
+    </div>
+     
+    </div>
+
+
+    <div class="flex items-center justify-between">
+      <button [disabled]="!addSignup.valid" class="inline-block py-2 px-10 text-white rounded bg-red-500 banner-content__btn">
+        signin
+      </button>
+      <a routerLink="/signup" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">signup</a>
+    </div>
+  </form>
+</div>
