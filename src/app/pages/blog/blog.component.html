@@ -3,9 +3,9 @@
         <h2 class="text-[44px] leading-[60px] font-bold p-5">Blog</h2>
         <div class="section-body">
             <div class="">
-                <div class="bg-[#fff] p-5">
+                <div class="bg-[#fff] p-5" *ngFor="let blogs of blogs">
                     <h3 class="text-[26px] font-bold">
-                        UI Interactions of the week
+                        {{blogs.name}}
                     </h3>
                     <div class="flex items-center py-[10px] space-x-4">
                         <span>12 Feb 2019</span>
@@ -13,10 +13,10 @@
                         <a href="" class="text-[#8695A4]">Express, Handlebars</a>
                     </div>
                     <p class="recent-post__desc  border-b pb-5">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        {{blogs.desc}}
                     </p>
                 </div>
+
                 <div class="bg-[#fff] p-5">
                     <h3 class="text-[26px] font-bold">
                         UI Interactions of the week
